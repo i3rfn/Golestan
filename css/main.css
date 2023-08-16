@@ -1,0 +1,1235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: iran;
+}
+body {
+  background-color: #d2d2d2;
+}
+
+@font-face {
+  font-family: iran;
+  src: url(../media/IRANSans.ttf);
+}
+
+/* start header */
+div.container {
+  width: 100%;
+  height: 100vh;
+}
+
+div.container > div.header {
+  width: 85%;
+  height: 100px;
+  background-color: #282828;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: sticky;
+  top: 0;
+  z-index: 999 !important;
+}
+
+div.container > div.header > div.logo {
+  width: 170px;
+  transform: translate(-25px, 40px);
+}
+div.container > div.header > div.menu {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 200px;
+}
+div.container > div.header > div.menu > ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.header > div.menu > ul > li {
+  height: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  border-left: 1px solid rgb(112, 112, 112);
+}
+div.container > div.header > div.menu > ul > li > a {
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  text-decoration: none;
+  margin: 0 15px;
+  color: #a6a3a2;
+  transition: all 200ms linear;
+}
+div.container > div.header > div.menu > ul > li.nagir {
+  border: unset;
+}
+div.container > div.header > div.menu > ul a:hover {
+  color: white;
+}
+
+/* end header */
+/* first part */
+div.container > div.first {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(#f2f2f2, #d4d4d4);
+}
+div.container > div.first > div.innerF {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+div.container > div.first > div.innerF > div.rast {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  margin-right: 350px;
+}
+div.container > div.first > div.innerF > div.chap {
+  width: 40%;
+}
+div.container > div.first > div.innerF > div.rast > h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-bottom: 5px;
+  color: red;
+  text-align: right;
+}
+div.container > div.first > div.innerF > div.rast > h3 {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  color: #6e6c6c;
+  text-align: right;
+}
+div.container > div.first > div.innerF > div.rast > p {
+  width: 400px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+  margin-bottom: 30px;
+  color: #898989;
+}
+div.container > div.first > div.innerF > div.rast > a {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  color: gray;
+  transition: all 200ms linear;
+}
+div.container > div.first > div.innerF > div.rast > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+
+/* end first part */
+/* start second part */
+div.container > div.second {
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+div.container > div.second > div.innerS {
+  width: 100%;
+  border-top: 1px solid gray;
+}
+div.container > div.second > div.innerS > div.txt {
+  width: 45%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+div.container > div.second > div.innerS > div.txt > h2 {
+  font-size: 20px;
+  color: red;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+div.container > div.second > div.innerS > div.txt > p {
+  color: #898989;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+div.container > div.second > div.innerS > div.txt > p > span {
+  color: red;
+}
+/* end second part */
+/* start third part */
+div.container > div.third {
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.third > div.innerT {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 100px 0;
+}
+div.container > div.third > div.innerT > div.yek {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+  background-color: white;
+}
+div.container > div.third > div.innerT > div.yek > p {
+  text-align: center;
+  font-size: 16px;
+  margin: 8px 0;
+}
+div.container > div.third > div.innerT > div.do {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+div.container > div.third > div.innerT > div.do > p {
+  text-align: center;
+  font-size: 16px;
+  margin: 8px 0;
+}
+div.container > div.third > div.innerT > div.se {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+div.container > div.third > div.innerT > div.se > p {
+  text-align: center;
+  font-size: 16px;
+  margin: 8px 0;
+}
+div.container > div.third > div.innerT > div.chr {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+div.container > div.third > div.innerT > div.chr > p {
+  text-align: center;
+  font-size: 16px;
+  margin: 8px 0;
+}
+/* end third part */
+/* start fourth part */
+div.container > div.fourth {
+  width: 85%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+div.container > div.fourth > div.innerFO {
+  width: 100%;
+  height: 65vh;
+
+  background-image: url(../media/a16.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.container > div.fourth > div.khat {
+  border-top: 1px solid gray;
+  width: 100%;
+  height: 25px;
+  margin-top: 70px;
+}
+div.container > div.fourth > div.innerFO > div.brchsb {
+  background-color: #ed1c24;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-500px, 535px);
+  justify-content: center;
+}
+div.container > div.fourth > div.innerFO > div.brchsb > h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+div.container > div.fourth > div.innerFO > div.brchsb > p {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+div.container > div.fourth > div.rngi {
+  width: 100%;
+  height: 25px;
+  background-color: #e9d69f;
+}
+/* end fourth part */
+/* start fifth part */
+div.container > div.fifth {
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+}
+div.container > div.fifth > div.innerFI {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+}
+div.container > div.fifth > div.innerFI > div.txt {
+  width: 40%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+div.container > div.fifth > div.innerFI > div.txt > h2 {
+  margin: 30px 0;
+  font-size: 20px;
+  color: red;
+}
+div.container > div.fifth > div.innerFI > div.txt > p {
+  color: gray;
+  font-size: 16px;
+  text-align: justify;
+}
+div.container > div.fifth > div.innerFI > div.paiin {
+  width: 40%;
+  height: 60px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+div.container > div.fifth > div.innerFI > div.paiin > div.paiin1 {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+div.container > div.fifth > div.innerFI > div.paiin > div.paiin2 {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+div.container > div.fifth > div.innerFI > div.paiin a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.fifth > div.innerFI > div.paiin > div.paiin1 > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+div.container > div.fifth > div.innerFI > div.paiin > div.paiin2 > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+/* end fifth part */
+/* start sixth part */
+div.container > div.sixth {
+  width: 85%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+div.container > div.sixth > div.innerSI {
+  width: 100%;
+  height: 65vh;
+  margin-top: 50px;
+  background-image: url(../media/a17.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.container > div.sixth > div.innerSI > div.brchsb {
+  background-color: #ed1c24;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-500px, 535px);
+  justify-content: center;
+}
+div.container > div.sixth > div.innerSI > div.brchsb > h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+div.container > div.sixth > div.innerSI > div.brchsb > p {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+div.container > div.sixth > div.rngi {
+  width: 100%;
+  height: 25px;
+  background-color: #e9d69f;
+}
+/* end sixth part */
+/* start seventh part */
+div.container > div.seventh {
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+}
+div.container > div.seventh > div.innerSV {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+}
+div.container > div.seventh > div.innerSV > div.txt {
+  width: 40%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+div.container > div.seventh > div.innerSV > div.txt > h2 {
+  margin: 30px 0;
+  font-size: 20px;
+  color: red;
+}
+div.container > div.seventh > div.innerSV > div.txt > p {
+  color: gray;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+div.container > div.seventh > div.innerSV > div.txt > p > span {
+  color: red;
+}
+div.container > div.seventh > div.innerSV > div.paiin {
+  width: 40%;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+}
+div.container > div.seventh > div.innerSV > div.paiin > div.paiin1 {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+div.container > div.seventh > div.innerSV > div.paiin > div.paiin1 > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.seventh > div.innerSV > div.paiin > div.paiin1 > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+/* end seventh part */
+/* start eighth part */
+div.container > div.eighth {
+  width: 85%;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+div.container > div.eighth > div.innerEI {
+  width: 100%;
+  height: 65vh;
+  margin-top: 50px;
+  background-image: url(../media/a18.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.container > div.eighth > div.innerEI > div.brchsb {
+  background-color: #ed1c24;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-500px, 535px);
+  justify-content: center;
+}
+div.container > div.eighth > div.innerEI > div.brchsb > h2 {
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+div.container > div.eighth > div.innerEI > div.brchsb > p {
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+div.container > div.eighth > div.rngi {
+  width: 100%;
+  height: 25px;
+  background-color: #e9d69f;
+}
+/* end eighth part */
+/* start ninth part */
+div.container > div.ninth {
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+}
+div.container > div.ninth > div.innerNI {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+}
+div.container > div.ninth > div.innerNI > div.txt {
+  width: 40%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+div.container > div.ninth > div.innerNI > div.txt > h2 {
+  margin: 30px 0;
+  font-size: 20px;
+  color: red;
+}
+div.container > div.ninth > div.innerNI > div.txt > p {
+  color: gray;
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+div.container > div.ninth > div.innerNI > div.txt > p > span {
+  color: red;
+}
+div.container > div.ninth > div.innerNI > div.paiin {
+  width: 40%;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+}
+div.container > div.ninth > div.innerNI > div.paiin > div.paiin1 {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 70px;
+}
+div.container > div.ninth > div.innerNI > div.paiin > div.paiin1 > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.ninth > div.innerNI > div.paiin > div.paiin1 > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+/* end ninth part */
+/* start tenth part */
+div.container > div.tenth {
+  width: 85%;
+  margin: 0 auto;
+}
+div.container > div.tenth > div.prallax {
+  background-image: url(../media/a19.png);
+  width: 100%;
+  height: 300px;
+  background-attachment: fixed;
+}
+/* end tenth part */
+/* start eleventh */
+div.container > div.eleventh {
+  width: 85%;
+  height: 70px;
+  margin: 0 auto;
+  background-color: white;
+}
+div.container > div.eleventh > div.innerEL {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-right: 300px;
+  padding: 20px 0;
+}
+div.container > div.eleventh > div.innerEL > h2 {
+  color: red;
+  font-size: 20px;
+}
+div.container > div.eleventh > div.innerEL > p {
+  color: gray;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* end eleventh part */
+/* start twelfth part */
+div.container > div.twelfth {
+  width: 85%;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: #cde4b0;
+}
+div.container > div.twelfth > div.innerTW {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.twelfth > div.innerTW > div.yek {
+  width: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+  box-shadow: 2px 2px 10px black;
+  margin-left: 15px;
+}
+div.container > div.twelfth > div.innerTW > div.yek > img {
+  width: 100%;
+  opacity: 1;
+}
+div.container > div.twelfth > div.innerTW > div.yek > img:hover {
+  opacity: 0.8;
+}
+div.container > div.twelfth > div.innerTW > div.yek > h2 {
+  color: red;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0 50px;
+}
+div.container > div.twelfth > div.innerTW > div.yek > p {
+  color: gray;
+  font-size: 14px;
+  padding: 0 30px;
+  text-align: justify;
+}
+div.container > div.twelfth > div.innerTW > div.yek > div.edme {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 30px 50px;
+}
+div.container > div.twelfth > div.innerTW > div.yek > div.edme > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.twelfth > div.innerTW > div.yek > div.edme > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+div.container > div.twelfth > div.innerTW > div.do {
+  width: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+  box-shadow: 2px 2px 10px black;
+  margin-left: 15px;
+}
+div.container > div.twelfth > div.innerTW > div.do > img {
+  width: 100%;
+  opacity: 1;
+}
+div.container > div.twelfth > div.innerTW > div.do > img:hover {
+  opacity: 0.8;
+}
+div.container > div.twelfth > div.innerTW > div.do > h2 {
+  color: red;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0 50px;
+}
+div.container > div.twelfth > div.innerTW > div.do > p {
+  color: gray;
+  font-size: 14px;
+  padding: 0 30px;
+  text-align: justify;
+}
+div.container > div.twelfth > div.innerTW > div.do > div.edme {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 30px 50px;
+}
+div.container > div.twelfth > div.innerTW > div.do > div.edme > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.twelfth > div.innerTW > div.do > div.edme > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+div.container > div.twelfth > div.innerTW > div.se {
+  width: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+  box-shadow: 2px 2px 10px black;
+}
+div.container > div.twelfth > div.innerTW > div.se > img {
+  width: 100%;
+  opacity: 1;
+}
+div.container > div.twelfth > div.innerTW > div.se > img:hover {
+  opacity: 0.8;
+}
+div.container > div.twelfth > div.innerTW > div.se > h2 {
+  color: red;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0 50px;
+}
+div.container > div.twelfth > div.innerTW > div.se > p {
+  color: gray;
+  font-size: 14px;
+  padding: 0 30px;
+  text-align: justify;
+}
+div.container > div.twelfth > div.innerTW > div.se > div.edme {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 30px 50px;
+}
+div.container > div.twelfth > div.innerTW > div.se > div.edme > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.twelfth > div.innerTW > div.se > div.edme > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+/* end twelfth part */
+/* start thirteenth part */
+div.container > div.thirteenth {
+  width: 85%;
+  height: 70vh;
+  margin: 0 auto;
+  background-color: white;
+}
+div.container > div.thirteenth > div.innerTH {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.thirteenth > div.innerTH > div.yek {
+  width: 22%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+  box-shadow: 2px 2px 10px black;
+  margin-left: 15px;
+}
+div.container > div.thirteenth > div.innerTH > div.yek > video {
+  width: 100%;
+  opacity: 1;
+}
+
+div.container > div.thirteenth > div.innerTH > div.yek > h2 {
+  color: red;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0 50px;
+}
+div.container > div.thirteenth > div.innerTH > div.yek > p {
+  color: gray;
+  font-size: 14px;
+  padding: 0 30px;
+  text-align: justify;
+}
+div.container > div.thirteenth > div.innerTH > div.yek > div.edme {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 30px 50px;
+}
+div.container > div.thirteenth > div.innerTH > div.yek > div.edme > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.thirteenth > div.innerTH > div.yek > div.edme > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+div.container > div.thirteenth > div.innerTH > div.do {
+  width: 22%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+  box-shadow: 2px 2px 10px black;
+  margin-left: 15px;
+}
+div.container > div.thirteenth > div.innerTH > div.do > video {
+  width: 100%;
+  opacity: 1;
+}
+
+div.container > div.thirteenth > div.innerTH > div.do > h2 {
+  color: red;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0 50px;
+}
+div.container > div.thirteenth > div.innerTH > div.do > p {
+  color: gray;
+  font-size: 14px;
+  padding: 0 30px;
+  text-align: justify;
+}
+div.container > div.thirteenth > div.innerTH > div.do > div.edme {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 30px 50px;
+}
+div.container > div.thirteenth > div.innerTH > div.do > div.edme > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.thirteenth > div.innerTH > div.do > div.edme > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+div.container > div.thirteenth > div.innerTH > div.se {
+  width: 22%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 100px;
+  box-shadow: 2px 2px 10px black;
+}
+div.container > div.thirteenth > div.innerTH > div.se > video {
+  width: 100%;
+  opacity: 1;
+}
+
+div.container > div.thirteenth > div.innerTH > div.se > h2 {
+  color: red;
+  font-size: 18px;
+  margin: 20px 0;
+  padding: 0 50px;
+}
+div.container > div.thirteenth > div.innerTH > div.se > p {
+  color: gray;
+  font-size: 14px;
+  padding: 0 30px;
+  text-align: justify;
+}
+div.container > div.thirteenth > div.innerTH > div.se > div.edme {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 30px 50px;
+}
+div.container > div.thirteenth > div.innerTH > div.se > div.edme > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.thirteenth > div.innerTH > div.se > div.edme > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+/* end thirteenth part */
+/* start fourteenth part */
+div.container > div.fourteenth {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #105153;
+  display: flex;
+  flex-direction: column;
+}
+div.container > div.fourteenth > div.innerFT {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+div.container > div.fourteenth > div.innerFT > h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.container > div.fourteenth > div.brchsb {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #009da2;
+}
+div.container > div.fourteenth > div.brchsb > h2 {
+  color: #009da2;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 150px;
+}
+div.container > div.fourteenth > div.brchsb > p {
+  color: lightgray;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+div.container > div.fourteenth > div.brchsb > img {
+  z-index: 998;
+}
+div.container > div.fourteenth > div.rngi {
+  width: 100%;
+  height: 25px;
+  background-color: #e9d69f;
+}
+/* end fourteenth part */
+/* start fifteenth part */
+div.container > div.fifteenth {
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+}
+div.container > div.fifteenth > div.innerFF {
+  width: 100%;
+  border-top: 1px solid gray;
+  margin-top: 20px;
+}
+div.container > div.fifteenth > div.innerFF > div.txt {
+  width: 40%;
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+div.container > div.fifteenth > div.innerFF > div.txt > h2 {
+  margin: 30px 0;
+  font-size: 20px;
+  color: red;
+}
+div.container > div.fifteenth > div.innerFF > div.txt > p {
+  color: gray;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+div.container > div.fifteenth > div.innerFF > div.txt > p > span {
+  color: red;
+}
+div.container > div.fifteenth > div.innerFF > div.paiin {
+  width: 40%;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+}
+div.container > div.fifteenth > div.innerFF > div.paiin > div.paiin1 {
+  width: 130px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 200px;
+}
+div.container > div.fifteenth > div.innerFF > div.paiin > div.paiin1 > a {
+  text-decoration: none;
+  color: gray;
+  font-size: 14px;
+  display: block;
+  border-radius: 10px;
+}
+div.container > div.fifteenth > div.innerFF > div.paiin > div.paiin1 > a:hover {
+  background-color: #ed1c24;
+  color: white;
+}
+/* end fifteenth part */
+/* start sixteenth part */
+div.container > div.sixteenth {
+  width: 85%;
+  background-color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+div.container > div.sixteenth > div.innerSX {
+  width: 100%;
+  height: 100px;
+  background-color: #eeefef;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.sixteenth > div.innerSX > img {
+  margin-right: 5px;
+}
+div.container > div.sixteenth > div.rngi {
+  width: 100%;
+  height: 25px;
+  background-color: #ed1c24;
+}
+/* end sixteenth part */
+/* start seventeenth part */
+div.container > div.seventeenth {
+  width: 85%;
+  background-color: #282828;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+div.container > div.seventeenth > div.innerSVN {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek > img {
+  margin: 10px;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek > h2 {
+  width: 120px;
+  color: white;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek > ul {
+  list-style: none;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek a {
+  text-decoration: none;
+  color: #898989;
+  font-size: 16px;
+}
+div.container > div.seventeenth > div.innerSVN > div.do {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.seventeenth > div.innerSVN > div.do > img {
+  margin: 10px;
+}
+div.container > div.seventeenth > div.innerSVN > div.do > h2 {
+  width: 120px;
+  color: white;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+div.container > div.seventeenth > div.innerSVN > div.do > ul {
+  list-style: none;
+}
+div.container > div.seventeenth > div.innerSVN > div.do a {
+  text-decoration: none;
+  color: #898989;
+  font-size: 16px;
+}
+div.container > div.seventeenth > div.innerSVN > div.se {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.seventeenth > div.innerSVN > div.se > img {
+  margin: 10px;
+}
+div.container > div.seventeenth > div.innerSVN > div.se > h2 {
+  width: 120px;
+  color: white;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+div.container > div.seventeenth > div.innerSVN > div.se > ul {
+  list-style: none;
+}
+div.container > div.seventeenth > div.innerSVN > div.se a {
+  text-decoration: none;
+  color: #898989;
+  font-size: 16px;
+}
+div.container > div.seventeenth > div.innerSVN > div.chr {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.container > div.seventeenth > div.innerSVN > div.chr > img {
+  margin: 10px;
+}
+div.container > div.seventeenth > div.innerSVN > div.chr > h2 {
+  width: 120px;
+  color: white;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+div.container > div.seventeenth > div.innerSVN > div.chr > ul {
+  list-style: none;
+}
+div.container > div.seventeenth > div.innerSVN > div.chr a {
+  text-decoration: none;
+  color: #898989;
+  font-size: 16px;
+}
+div.container > div.seventeenth > div.CR {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+div.container > div.seventeenth > div.CR > h2 {
+  color: #898989;
+  font-size: 16px;
+  font-weight: 400;
+}
+div.container > div.seventeenth > div.CR > p {
+  color: #898989;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* end seventeenth part */
+/* GG */
