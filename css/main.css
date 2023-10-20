@@ -5,6 +5,15 @@
   direction: rtl;
   font-family: iran;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #dbdbdb;
+}
+::-webkit-scrollbar-thumb {
+  background: #848484;
+}
 body {
   background-color: #d2d2d2;
 }
@@ -18,6 +27,10 @@ body {
 div.container {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
 }
 
 div.container > div.header {
@@ -30,7 +43,7 @@ div.container > div.header {
   justify-content: left;
   position: sticky;
   top: 0;
-  z-index: 999 !important;
+  z-index: 999;
 }
 
 div.container > div.header > div.logo {
@@ -86,6 +99,7 @@ div.container > div.first {
   justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(#f2f2f2, #d4d4d4);
+  user-select: none;
 }
 div.container > div.first > div.innerF {
   width: 100%;
@@ -184,18 +198,20 @@ div.container > div.second > div.innerS > div.txt > p > span {
 /* start third part */
 div.container > div.third {
   width: 85%;
-  background-color: white;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 div.container > div.third > div.innerT {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  margin: 100px 0;
+  margin: 100px auto;
 }
 div.container > div.third > div.innerT > div.yek {
   width: 40%;
@@ -258,10 +274,10 @@ div.container > div.fourth {
 div.container > div.fourth > div.innerFO {
   width: 100%;
   height: 65vh;
-
   background-image: url(../media/a16.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 div.container > div.fourth > div.khat {
   border-top: 1px solid gray;
@@ -275,8 +291,10 @@ div.container > div.fourth > div.innerFO > div.brchsb {
   height: 100px;
   display: flex;
   flex-direction: column;
-  transform: translate(-500px, 535px);
   justify-content: center;
+  position: absolute;
+  bottom: -25px;
+  right: 300px;
 }
 div.container > div.fourth > div.innerFO > div.brchsb > h2 {
   color: white;
@@ -358,6 +376,7 @@ div.container > div.fifth > div.innerFI > div.paiin a {
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.fifth > div.innerFI > div.paiin > div.paiin1 > a:hover {
   background-color: #ed1c24;
@@ -383,6 +402,7 @@ div.container > div.sixth > div.innerSI {
   background-image: url(../media/a17.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 div.container > div.sixth > div.innerSI > div.brchsb {
@@ -391,8 +411,10 @@ div.container > div.sixth > div.innerSI > div.brchsb {
   height: 100px;
   display: flex;
   flex-direction: column;
-  transform: translate(-500px, 535px);
   justify-content: center;
+  position: absolute;
+  bottom: -25px;
+  right: 300px;
 }
 div.container > div.sixth > div.innerSI > div.brchsb > h2 {
   color: white;
@@ -468,6 +490,7 @@ div.container > div.seventh > div.innerSV > div.paiin > div.paiin1 > a {
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.seventh > div.innerSV > div.paiin > div.paiin1 > a:hover {
   background-color: #ed1c24;
@@ -489,6 +512,7 @@ div.container > div.eighth > div.innerEI {
   background-image: url(../media/a18.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 div.container > div.eighth > div.innerEI > div.brchsb {
@@ -497,8 +521,10 @@ div.container > div.eighth > div.innerEI > div.brchsb {
   height: 100px;
   display: flex;
   flex-direction: column;
-  transform: translate(-500px, 535px);
   justify-content: center;
+  position: absolute;
+  bottom: -25px;
+  right: 300px;
 }
 div.container > div.eighth > div.innerEI > div.brchsb > h2 {
   color: white;
@@ -575,6 +601,7 @@ div.container > div.ninth > div.innerNI > div.paiin > div.paiin1 > a {
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.ninth > div.innerNI > div.paiin > div.paiin1 > a:hover {
   background-color: #ed1c24;
@@ -622,9 +649,12 @@ div.container > div.eleventh > div.innerEL > p {
 /* start twelfth part */
 div.container > div.twelfth {
   width: 85%;
-  height: 80vh;
+  height: fit-content;
   margin: 0 auto;
   background-color: #cde4b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 div.container > div.twelfth > div.innerTW {
   width: 100%;
@@ -632,9 +662,12 @@ div.container > div.twelfth > div.innerTW {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 15px;
+  padding-bottom: 100px;
 }
 div.container > div.twelfth > div.innerTW > div.yek {
-  width: 20%;
+  width: 25%;
+  height: 550px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -642,11 +675,12 @@ div.container > div.twelfth > div.innerTW > div.yek {
   align-items: start;
   margin-top: 100px;
   box-shadow: 2px 2px 10px black;
-  margin-left: 15px;
 }
 div.container > div.twelfth > div.innerTW > div.yek > img {
   width: 100%;
   opacity: 1;
+  object-fit: cover;
+  transition: all 200ms linear;
 }
 div.container > div.twelfth > div.innerTW > div.yek > img:hover {
   opacity: 0.8;
@@ -655,7 +689,7 @@ div.container > div.twelfth > div.innerTW > div.yek > h2 {
   color: red;
   font-size: 18px;
   margin: 20px 0;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 div.container > div.twelfth > div.innerTW > div.yek > p {
   color: gray;
@@ -664,27 +698,31 @@ div.container > div.twelfth > div.innerTW > div.yek > p {
   text-align: justify;
 }
 div.container > div.twelfth > div.innerTW > div.yek > div.edme {
-  width: 130px;
+  width: 120px;
   height: 45px;
   line-height: 45px;
   text-align: center;
   border: 1px solid gray;
   border-radius: 10px;
-  margin: 30px 50px;
+  margin: 30px 30px;
 }
 div.container > div.twelfth > div.innerTW > div.yek > div.edme > a {
+  width: 120px;
+  height: 45px;
   text-decoration: none;
   color: gray;
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.twelfth > div.innerTW > div.yek > div.edme > a:hover {
   background-color: #ed1c24;
   color: white;
 }
 div.container > div.twelfth > div.innerTW > div.do {
-  width: 20%;
+  width: 25%;
+  height: 550px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -692,11 +730,12 @@ div.container > div.twelfth > div.innerTW > div.do {
   align-items: start;
   margin-top: 100px;
   box-shadow: 2px 2px 10px black;
-  margin-left: 15px;
 }
 div.container > div.twelfth > div.innerTW > div.do > img {
   width: 100%;
   opacity: 1;
+  object-fit: cover;
+  transition: all 200ms linear;
 }
 div.container > div.twelfth > div.innerTW > div.do > img:hover {
   opacity: 0.8;
@@ -705,7 +744,7 @@ div.container > div.twelfth > div.innerTW > div.do > h2 {
   color: red;
   font-size: 18px;
   margin: 20px 0;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 div.container > div.twelfth > div.innerTW > div.do > p {
   color: gray;
@@ -714,27 +753,31 @@ div.container > div.twelfth > div.innerTW > div.do > p {
   text-align: justify;
 }
 div.container > div.twelfth > div.innerTW > div.do > div.edme {
-  width: 130px;
+  width: 120px;
   height: 45px;
   line-height: 45px;
   text-align: center;
   border: 1px solid gray;
   border-radius: 10px;
-  margin: 30px 50px;
+  margin: 30px 30px;
 }
 div.container > div.twelfth > div.innerTW > div.do > div.edme > a {
+  width: 120px;
+  height: 45px;
   text-decoration: none;
   color: gray;
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.twelfth > div.innerTW > div.do > div.edme > a:hover {
   background-color: #ed1c24;
   color: white;
 }
 div.container > div.twelfth > div.innerTW > div.se {
-  width: 20%;
+  width: 25%;
+  height: 550px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -746,6 +789,8 @@ div.container > div.twelfth > div.innerTW > div.se {
 div.container > div.twelfth > div.innerTW > div.se > img {
   width: 100%;
   opacity: 1;
+  object-fit: cover;
+  transition: all 200ms linear;
 }
 div.container > div.twelfth > div.innerTW > div.se > img:hover {
   opacity: 0.8;
@@ -754,7 +799,7 @@ div.container > div.twelfth > div.innerTW > div.se > h2 {
   color: red;
   font-size: 18px;
   margin: 20px 0;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 div.container > div.twelfth > div.innerTW > div.se > p {
   color: gray;
@@ -763,20 +808,23 @@ div.container > div.twelfth > div.innerTW > div.se > p {
   text-align: justify;
 }
 div.container > div.twelfth > div.innerTW > div.se > div.edme {
-  width: 130px;
+  width: 120px;
   height: 45px;
   line-height: 45px;
   text-align: center;
   border: 1px solid gray;
   border-radius: 10px;
-  margin: 30px 50px;
+  margin: 30px 30px;
 }
 div.container > div.twelfth > div.innerTW > div.se > div.edme > a {
+  width: 120px;
+  height: 45px;
   text-decoration: none;
   color: gray;
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.twelfth > div.innerTW > div.se > div.edme > a:hover {
   background-color: #ed1c24;
@@ -786,9 +834,12 @@ div.container > div.twelfth > div.innerTW > div.se > div.edme > a:hover {
 /* start thirteenth part */
 div.container > div.thirteenth {
   width: 85%;
-  height: 70vh;
+  height: fit-content;
   margin: 0 auto;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 div.container > div.thirteenth > div.innerTH {
   width: 100%;
@@ -796,9 +847,12 @@ div.container > div.thirteenth > div.innerTH {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 100px;
+  gap: 15px;
 }
 div.container > div.thirteenth > div.innerTH > div.yek {
-  width: 22%;
+  width: 25%;
+  height: 450px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -806,18 +860,18 @@ div.container > div.thirteenth > div.innerTH > div.yek {
   align-items: start;
   margin-top: 100px;
   box-shadow: 2px 2px 10px black;
-  margin-left: 15px;
 }
 div.container > div.thirteenth > div.innerTH > div.yek > video {
   width: 100%;
   opacity: 1;
+  object-fit: cover;
 }
 
 div.container > div.thirteenth > div.innerTH > div.yek > h2 {
   color: red;
   font-size: 18px;
   margin: 20px 0;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 div.container > div.thirteenth > div.innerTH > div.yek > p {
   color: gray;
@@ -826,27 +880,31 @@ div.container > div.thirteenth > div.innerTH > div.yek > p {
   text-align: justify;
 }
 div.container > div.thirteenth > div.innerTH > div.yek > div.edme {
-  width: 130px;
+  width: 120px;
   height: 45px;
   line-height: 45px;
   text-align: center;
   border: 1px solid gray;
   border-radius: 10px;
-  margin: 30px 50px;
+  margin: 30px 30px;
 }
 div.container > div.thirteenth > div.innerTH > div.yek > div.edme > a {
+  width: 120px;
+  height: 45px;
   text-decoration: none;
   color: gray;
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.thirteenth > div.innerTH > div.yek > div.edme > a:hover {
   background-color: #ed1c24;
   color: white;
 }
 div.container > div.thirteenth > div.innerTH > div.do {
-  width: 22%;
+  width: 25%;
+  height: 450px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -854,18 +912,18 @@ div.container > div.thirteenth > div.innerTH > div.do {
   align-items: start;
   margin-top: 100px;
   box-shadow: 2px 2px 10px black;
-  margin-left: 15px;
 }
 div.container > div.thirteenth > div.innerTH > div.do > video {
   width: 100%;
   opacity: 1;
+  object-fit: cover;
 }
 
 div.container > div.thirteenth > div.innerTH > div.do > h2 {
   color: red;
   font-size: 18px;
   margin: 20px 0;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 div.container > div.thirteenth > div.innerTH > div.do > p {
   color: gray;
@@ -874,27 +932,31 @@ div.container > div.thirteenth > div.innerTH > div.do > p {
   text-align: justify;
 }
 div.container > div.thirteenth > div.innerTH > div.do > div.edme {
-  width: 130px;
+  width: 120px;
   height: 45px;
   line-height: 45px;
   text-align: center;
   border: 1px solid gray;
   border-radius: 10px;
-  margin: 30px 50px;
+  margin: 30px 30px;
 }
 div.container > div.thirteenth > div.innerTH > div.do > div.edme > a {
+  width: 120px;
+  height: 45px;
   text-decoration: none;
   color: gray;
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.thirteenth > div.innerTH > div.do > div.edme > a:hover {
   background-color: #ed1c24;
   color: white;
 }
 div.container > div.thirteenth > div.innerTH > div.se {
-  width: 22%;
+  width: 25%;
+  height: 450px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -906,13 +968,14 @@ div.container > div.thirteenth > div.innerTH > div.se {
 div.container > div.thirteenth > div.innerTH > div.se > video {
   width: 100%;
   opacity: 1;
+  object-fit: cover;
 }
 
 div.container > div.thirteenth > div.innerTH > div.se > h2 {
   color: red;
   font-size: 18px;
   margin: 20px 0;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 div.container > div.thirteenth > div.innerTH > div.se > p {
   color: gray;
@@ -921,20 +984,23 @@ div.container > div.thirteenth > div.innerTH > div.se > p {
   text-align: justify;
 }
 div.container > div.thirteenth > div.innerTH > div.se > div.edme {
-  width: 130px;
+  width: 120px;
   height: 45px;
   line-height: 45px;
   text-align: center;
   border: 1px solid gray;
   border-radius: 10px;
-  margin: 30px 50px;
+  margin: 30px 30px;
 }
 div.container > div.thirteenth > div.innerTH > div.se > div.edme > a {
+  width: 120px;
+  height: 45px;
   text-decoration: none;
   color: gray;
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.thirteenth > div.innerTH > div.se > div.edme > a:hover {
   background-color: #ed1c24;
@@ -948,6 +1014,8 @@ div.container > div.fourteenth {
   background-color: #105153;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 div.container > div.fourteenth > div.innerFT {
   width: 100%;
@@ -1052,6 +1120,7 @@ div.container > div.fifteenth > div.innerFF > div.paiin > div.paiin1 > a {
   font-size: 14px;
   display: block;
   border-radius: 10px;
+  transition: all 200ms linear;
 }
 div.container > div.fifteenth > div.innerFF > div.paiin > div.paiin1 > a:hover {
   background-color: #ed1c24;
@@ -1077,6 +1146,7 @@ div.container > div.sixteenth > div.innerSX {
 }
 div.container > div.sixteenth > div.innerSX > img {
   margin-right: 5px;
+  cursor: pointer;
 }
 div.container > div.sixteenth > div.rngi {
   width: 100%;
@@ -1091,6 +1161,8 @@ div.container > div.seventeenth {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 div.container > div.seventeenth > div.innerSVN {
   width: 100%;
@@ -1101,14 +1173,16 @@ div.container > div.seventeenth > div.innerSVN {
   margin-top: 40px;
 }
 div.container > div.seventeenth > div.innerSVN > div.yek {
-  width: 10%;
+  width: 15%;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 div.container > div.seventeenth > div.innerSVN > div.yek > img {
   margin: 10px;
+  object-fit: cover;
 }
 div.container > div.seventeenth > div.innerSVN > div.yek > h2 {
   width: 120px;
@@ -1128,16 +1202,22 @@ div.container > div.seventeenth > div.innerSVN > div.yek a {
   text-decoration: none;
   color: #898989;
   font-size: 16px;
+  transition: all 200ms linear;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek a:hover {
+  color: white;
 }
 div.container > div.seventeenth > div.innerSVN > div.do {
-  width: 10%;
+  width: 15%;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 div.container > div.seventeenth > div.innerSVN > div.do > img {
   margin: 10px;
+  object-fit: cover;
 }
 div.container > div.seventeenth > div.innerSVN > div.do > h2 {
   width: 120px;
@@ -1157,16 +1237,22 @@ div.container > div.seventeenth > div.innerSVN > div.do a {
   text-decoration: none;
   color: #898989;
   font-size: 16px;
+  transition: all 200ms linear;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek a:hover {
+  color: white;
 }
 div.container > div.seventeenth > div.innerSVN > div.se {
-  width: 10%;
+  width: 15%;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 div.container > div.seventeenth > div.innerSVN > div.se > img {
   margin: 10px;
+  object-fit: cover;
 }
 div.container > div.seventeenth > div.innerSVN > div.se > h2 {
   width: 120px;
@@ -1186,16 +1272,22 @@ div.container > div.seventeenth > div.innerSVN > div.se a {
   text-decoration: none;
   color: #898989;
   font-size: 16px;
+  transition: all 200ms linear;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek a:hover {
+  color: white;
 }
 div.container > div.seventeenth > div.innerSVN > div.chr {
-  width: 10%;
+  width: 15%;
+  height: 350px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 div.container > div.seventeenth > div.innerSVN > div.chr > img {
   margin: 10px;
+  object-fit: cover;
 }
 div.container > div.seventeenth > div.innerSVN > div.chr > h2 {
   width: 120px;
@@ -1215,6 +1307,10 @@ div.container > div.seventeenth > div.innerSVN > div.chr a {
   text-decoration: none;
   color: #898989;
   font-size: 16px;
+  transition: all 200ms linear;
+}
+div.container > div.seventeenth > div.innerSVN > div.yek a:hover {
+  color: white;
 }
 div.container > div.seventeenth > div.CR {
   text-align: center;
@@ -1225,11 +1321,13 @@ div.container > div.seventeenth > div.CR > h2 {
   color: #898989;
   font-size: 16px;
   font-weight: 400;
+  font-family: sans-serif;
 }
 div.container > div.seventeenth > div.CR > p {
   color: #898989;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 10px;
+  font-family: sans-serif;
+  margin-top: 10px;
 }
 /* end seventeenth part */
 /* GG */
