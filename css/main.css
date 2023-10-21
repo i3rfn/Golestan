@@ -77,11 +77,17 @@ div.container > div.header > div.menu > ul > li > a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   text-decoration: none;
   margin: 0 15px;
   color: #a6a3a2;
   transition: all 200ms linear;
+}
+div.container > div.header > div.menu > ul > li:nth-of-type(8) > a {
+  font-family: sans-serif !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 div.container > div.header > div.menu > ul > li.nagir {
   border: unset;
