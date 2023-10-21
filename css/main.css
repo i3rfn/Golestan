@@ -34,7 +34,7 @@ div.container {
 }
 
 div.container > div.header {
-  width: 85%;
+  width: 100%;
   height: 100px;
   background-color: #282828;
   margin: 0 auto;
@@ -51,7 +51,7 @@ div.container > div.header > div.logo {
   transform: translate(-25px, 40px);
 }
 div.container > div.header > div.menu {
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -93,7 +93,7 @@ div.container > div.header > div.menu > ul a:hover {
 /* end header */
 /* first part */
 div.container > div.first {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -163,7 +163,7 @@ div.container > div.first > div.innerF > div.rast > a:hover {
 /* end first part */
 /* start second part */
 div.container > div.second {
-  width: 85%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   padding-top: 15px;
@@ -197,7 +197,7 @@ div.container > div.second > div.innerS > div.txt > p > span {
 /* end second part */
 /* start third part */
 div.container > div.third {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -265,7 +265,7 @@ div.container > div.third > div.innerT > div.chr > p {
 /* end third part */
 /* start fourth part */
 div.container > div.fourth {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background-color: white;
   display: flex;
@@ -315,7 +315,7 @@ div.container > div.fourth > div.rngi {
 /* end fourth part */
 /* start fifth part */
 div.container > div.fifth {
-  width: 85%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   display: flex;
@@ -389,7 +389,7 @@ div.container > div.fifth > div.innerFI > div.paiin > div.paiin2 > a:hover {
 /* end fifth part */
 /* start sixth part */
 div.container > div.sixth {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background-color: white;
   display: flex;
@@ -435,7 +435,7 @@ div.container > div.sixth > div.rngi {
 /* end sixth part */
 /* start seventh part */
 div.container > div.seventh {
-  width: 85%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   display: flex;
@@ -499,7 +499,7 @@ div.container > div.seventh > div.innerSV > div.paiin > div.paiin1 > a:hover {
 /* end seventh part */
 /* start eighth part */
 div.container > div.eighth {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background-color: white;
   display: flex;
@@ -545,7 +545,7 @@ div.container > div.eighth > div.rngi {
 /* end eighth part */
 /* start ninth part */
 div.container > div.ninth {
-  width: 85%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   display: flex;
@@ -610,7 +610,7 @@ div.container > div.ninth > div.innerNI > div.paiin > div.paiin1 > a:hover {
 /* end ninth part */
 /* start tenth part */
 div.container > div.tenth {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
 }
 div.container > div.tenth > div.prallax {
@@ -622,7 +622,7 @@ div.container > div.tenth > div.prallax {
 /* end tenth part */
 /* start eleventh */
 div.container > div.eleventh {
-  width: 85%;
+  width: 100%;
   height: 70px;
   margin: 0 auto;
   background-color: white;
@@ -648,7 +648,7 @@ div.container > div.eleventh > div.innerEL > p {
 /* end eleventh part */
 /* start twelfth part */
 div.container > div.twelfth {
-  width: 85%;
+  width: 100%;
   height: fit-content;
   margin: 0 auto;
   background-color: #cde4b0;
@@ -833,7 +833,7 @@ div.container > div.twelfth > div.innerTW > div.se > div.edme > a:hover {
 /* end twelfth part */
 /* start thirteenth part */
 div.container > div.thirteenth {
-  width: 85%;
+  width: 100%;
   height: fit-content;
   margin: 0 auto;
   background-color: white;
@@ -1009,7 +1009,7 @@ div.container > div.thirteenth > div.innerTH > div.se > div.edme > a:hover {
 /* end thirteenth part */
 /* start fourteenth part */
 div.container > div.fourteenth {
-  width: 85%;
+  width: 100%;
   margin: 0 auto;
   background-color: #105153;
   display: flex;
@@ -1064,7 +1064,7 @@ div.container > div.fourteenth > div.rngi {
 /* end fourteenth part */
 /* start fifteenth part */
 div.container > div.fifteenth {
-  width: 85%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   display: flex;
@@ -1129,7 +1129,7 @@ div.container > div.fifteenth > div.innerFF > div.paiin > div.paiin1 > a:hover {
 /* end fifteenth part */
 /* start sixteenth part */
 div.container > div.sixteenth {
-  width: 85%;
+  width: 100%;
   background-color: white;
   margin: 0 auto;
   display: flex;
@@ -1156,7 +1156,7 @@ div.container > div.sixteenth > div.rngi {
 /* end sixteenth part */
 /* start seventeenth part */
 div.container > div.seventeenth {
-  width: 85%;
+  width: 100%;
   background-color: #282828;
   margin: 0 auto;
   display: flex;
